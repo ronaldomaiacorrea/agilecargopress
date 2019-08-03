@@ -1,7 +1,265 @@
 @charset "utf-8";
 /* CSS Document */
 
-h1 {
-	color: #B00F11;
-	font-size: 45px;
+body {
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;		
 }
+
+/* Global **/
+
+.container {
+	
+	width:80%;
+	margin: auto;
+	overflow: hidden;
+	align-content: center;
+}
+.button_1 {
+	
+	height: 38px;
+	background-color:#FF0004;
+	border:0;
+	padding-left: 20px;
+	padding-right:20px;
+	color:#FFFFFF;
+	
+}
+
+ul{
+	
+	margin: 0;
+	padding: 0;		
+}
+
+
+nav a{
+	
+	float: left;
+ 	display: block;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-bottom: 3px solid transparent;	
+}
+
+nav a:hover{
+	
+	border-bottom: 3px solid red;
+	color: #cccccc;	
+}
+
+h1 {
+	
+	color: #341789;
+	font-size: 22px;
+}
+
+.dark {
+	padding: 25px;
+	background: #35424a;
+	color: #ffffff;
+	margin: 20px;
+}
+
+/*Header **/
+
+header {
+	
+		background: #FFFFFF ;
+		color: #35424a;
+		padding-top: 10px;
+		min-height: 30px;
+		box-shadow: 0 6px 6px -6px red;	
+		position: fixed;
+		transition: top 0.2s ease-in-out;
+		width: 100%;
+		
+}
+
+header nav{
+	
+	color: #35424a;
+	float: right;
+	text-decoration: none;
+	font-size: 16px;
+	margin-top: 5px;
+	margin-left: 0;
+	
+}
+
+header #branding {
+	float: left;
+	margin: 0;	
+}
+
+header #branding img{
+	margin: 0;
+}
+
+header nav a{
+	
+	color: #35424a;
+}
+
+header nav a:hover{
+	
+	color: #E71215;
+	
+}
+
+
+nav li{
+	
+	float:left;
+	display: inline;
+	padding: 0 40px 0 40px;	
+	
+}
+
+/* ShowCase **/
+
+.destaque1 {
+	
+	color: #D5F5EE;
+	font-size: 60px;
+	font-family: 'Voces', cursive;
+	line-height: 1.5;
+	
+}
+
+.destaque2 {
+	
+	color: #E90408;
+	font-size: 60px;
+	line-height: 1.5;
+	font-family: 'Voces', cursive;
+
+}
+
+.destaque3 {
+	
+	color: #FFFFFF;
+	font-weight: bold;	
+}
+
+#showcase {	
+	background: url('../kendall-henderson-Pj6TgpS_Vt4-unsplash.jpg') no-repeat;
+	min-height: 400px;
+	box-shadow: 0 8px 6px -6px black;
+	text-align: center;
+	font-size: 25px;
+	color:#FFFFFF;	
+}
+
+#newsletter{
+	
+	background-color: #333665;
+	
+}
+
+#newsletter h1 {
+	
+	float: left;
+	color: #FFFFFF;
+	
+}
+
+#newsletter form { 
+	
+	float:right;
+	margin-top: 15px;
+	
+}
+
+#newsletter input[type="email"]{
+	
+	padding: 4px;
+	height: 25px;
+	width:250px;
+	
+}	
+
+
+
+/* Sidebar**/
+
+aside#sidebar {
+	
+	float: right;
+	width: 40%;
+	padding: 20px;
+	margin-top: 20px;	
+	
+}
+
+article#main-col {
+	float:left;
+	width:55%;
+}
+
+footer {
+	
+	padding: 20px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	background-color: #423E48;
+	text-align: center;
+	font-size: 18px;	
+	
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  border-radius: 7px;
+	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 500px) {
+
+	.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+	nav a {
+    float: none;    
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+
+
+	h1 {
+	font-size: 12px;
+	}
+	
+
+	
+
+  
+
+	
+
