@@ -28,6 +28,8 @@ body {
 	padding-left: 20px;
 	padding-right:20px;
 	color:#FFFFFF;
+	margin-bottom: 20px;
+	margin-top: 5px;
 	
 }
 
@@ -47,7 +49,8 @@ nav a{
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
-	border-bottom: 3px solid transparent;	
+	border-bottom: 3px solid transparent;
+	
 }
 
 nav a:hover{
@@ -62,12 +65,7 @@ h1 {
 	font-size: 22px;
 }
 
-.dark {
-	padding: 25px;
-	background: #35424a;
-	color: #ffffff;
-	margin: 20px;
-}
+
 
 /*Header **/
 
@@ -156,6 +154,7 @@ nav li{
 	box-shadow: 0 8px 6px -6px black;
 	text-align: center;
 	font-size: 25px;
+	height:auto;
 	color:#FFFFFF;	
 }
 
@@ -194,15 +193,23 @@ nav li{
 aside#sidebar {
 	
 	float: right;
-	width: 40%;
+	width: 35%;
 	padding: 20px;
-	margin-top: 20px;	
+	height: auto;
+	background: #35424a;
+	color: #ffffff;
+	margin: 30px;
 	
 }
 
 article#main-col {
 	float:left;
 	width:55%;
+}
+
+article#one-col {
+	
+	width: auto;
 }
 
 footer {
@@ -218,7 +225,7 @@ footer {
 
 .column {
   float: left;
-  width: 30%;
+  width: 22%;
   padding: 0 10px;
 }
 
@@ -231,30 +238,72 @@ footer {
 }
 
 .card {
-  border-radius: 7px;
-	box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  text-align: center;
-  background-color: #f1f1f1;
+  	border-radius: 7px;
+	box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2);
+  	padding: 10px;
+  	text-align: center;
+  	background-color: #B5A3A3;
+	min-height: 180px;
 }
 
 @media screen and (max-width: 500px) {
+	
+	.container{
+		max-height: auto;
+	}
+	
+	.destaque1 {
+		font-size: 45px;
+	}
+	
+	.destaque2 {
+		font-size: 45px;
+	}
 
 	.column {
-    width: 100%;
+		
+    width: auto;
     display: block;
     margin-bottom: 20px;
   }
+	
 	nav a {
     float: none;    
     width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    text-align: left;
+		
   }
-
-
-	h1 {
-	font-size: 12px;
+	
+	article#main-col{
+		
+		width: auto;
+		text-align: justify;		
+		
 	}
+	
+		
+	aside#sidebar{
+		position: sticky;
+		width: auto;
+		display: inline-block;
+		margin: 5px;
+	}
+	
+	sectio#newsletter{
+		width: auto;
+		text-align: justify;
+	}
+	
+	
+	
+	.card{
+		width: auto;
+	}
+	
+	
+
+
+
 	
 
 	
