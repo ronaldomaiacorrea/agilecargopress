@@ -214,12 +214,14 @@ article#one-col {
 
 footer {
 	
+	position: absolute;
 	padding: 20px;
 	margin-top: 20px;
 	color: #FFFFFF;
 	background-color: #423E48;
 	text-align: center;
-	font-size: 18px;	
+	font-size: 18px;
+	width: 100%;
 	
 }
 
